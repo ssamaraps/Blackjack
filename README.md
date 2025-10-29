@@ -3,6 +3,8 @@
 Bem-vindo ao **Blackjack App**, um jogo interativo de cartas desenvolvido com **Next.js**, **TypeScript** e **TailwindCSS**.  
 O objetivo é simples: chegar o mais próximo de **21 pontos** sem ultrapassar — mas cuidado, o Dealer também quer ganhar! 😎
 
+LINK PARA JOGAR: https://blackjack-seven-phi.vercel.app/login
+
 ---
 
 ## 🚀 Tecnologias Utilizadas

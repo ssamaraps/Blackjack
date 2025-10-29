@@ -1,28 +1,19 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 
-interface LoginRequestBody {
-  email: string;
-  password: string;
-}
+export async function POST(request: Request) {
+  const { email, password } = await request.json();
 
-interface LoginResponseBody {
-  access_token: string;
-  username: string;
-}
+  const correctEmail = process.env.TEST_EMAIL;
+  const correctPassword = process.env.TEST_PASSWORD;
 
-export async function POST(req: NextRequest) {
-  const body: LoginRequestBody = await req.json();
-
-  if (!body.email || !body.password) {
-    return NextResponse.json({ error: 'Campos obrigatórios' }, { status: 400 });
+  if (email === correctEmail && password === correctPassword) {
+    // Simula token (pode futuramente ser JWT)
+    const token = 'token-simulado-login-ok';
+    return NextResponse.json({ success: true, token });
   }
 
-  if (body.password === process.env.NEXT_PUBLIC_TEST_PASSWORD && body.email === process.env.NEXT_PUBLIC_TEST_EMAIL) {
-    return NextResponse.json({
-      access_token: 'token_simulado_123',
-      username: body.email, 
-    } as LoginResponseBody);
-  } else {
-    return NextResponse.json({ error: 'Inválido' }, { status: 401 });
-  }
+  return NextResponse.json(
+    { success: false, message: 'E-mail ou senha inválidos.' },
+    { status: 401 }
+  );
 }

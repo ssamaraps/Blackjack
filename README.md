@@ -1,14 +1,19 @@
-# 🃏 Blackjack App
+# 🃏 **Blackjack App**
 
 Bem-vindo ao **Blackjack App**, um jogo interativo de cartas desenvolvido com **Next.js**, **TypeScript** e **TailwindCSS**.  
-O objetivo é simples: chegar o mais próximo de **21 pontos** sem ultrapassar — mas cuidado, o Dealer também quer ganhar! 😎
 
-LINK PARA JOGAR:  https://blackjack-seven-phi.vercel.app/login
-COLOQUE:
-EMAIL: teste@email.com
-SENHA: 1234
+O objetivo é simples: some as cartas para chegar o mais próximo possível de **21 pontos** — mas cuidado, o **Dealer** também está jogando e quer te vencer! 🧠♠️  
+
 ---
 
+## 🎮 **Jogue Agora**
+
+👉 **Acesse:** [https://blackjack-seven-phi.vercel.app/login](https://blackjack-seven-phi.vercel.app/login)
+
+📧 **E-mail de teste:** `teste@email.com`  
+🔑 **Senha:** `1234`
+
+---
 ## 🚀 Tecnologias Utilizadas
 
 - ⚛️ **Next.js** (App Router)

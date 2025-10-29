@@ -26,12 +26,20 @@
   --font-mono: var(--font-geist-mono), monospace;
 }
 
-/* 🔹 Estilo base da página */
+/* 🔹 Garante que o body e html ocupem 100% da tela */
+html,
 body {
-  background: var(--background);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🔹 Estilo base da página (sem gradiente) */
+body {
   color: var(--foreground);
   font-family: var(--font-sans);
-  @apply min-h-screen flex items-center justify-center;
+  background: var(--background);
+  @apply min-h-screen;
 }
 
 /* 🔸 Container principal do login */
